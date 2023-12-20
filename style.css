@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,700&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #000000 url("shooting-stars.gif") repeat center fixed;
+    height: auto;
+    margin: 0;
+}
+
+section {
+    padding: 5vw; /* Adjusted to use viewport width units for padding */
+    text-align: center;
+    color: aliceblue;
+}
+
+header {
+    background-image: linear-gradient(to top, black, rgb(24, 24, 24));
+    display: flex;
+    justify-content: center;
+    padding: 5vw; /* Adjusted to use viewport width units for padding */
+    color: aliceblue;
+    font-style: italic;
+    font-weight: 700;
+}
+
+#mission-title {
+    padding-bottom: 1.5rem; /* Adjusted to use a relative unit */
+}
+
+#iotd {
+    width: 90%; /* Adjusted to use a relative unit */
+    max-height: 80vh; /* Adjusted to use viewport height units */
+    border-radius: 10px;
+    box-shadow: rgba(43, 43, 43, 0.25) 0px 20px 20px, rgba(43, 43, 43, 0.12) 0px -6px 12px, rgba(43, 43, 43, 0.12) 0px 2px 4px, rgba(43, 43, 43, 0.17) 0px 6px 6px, rgba(43, 43, 43, 0.09) 0px -1px 2px;
+}
+
+#text {
+    margin: 1rem; /* Adjusted to use a relative unit */
+    background-image: linear-gradient(to top, black, rgb(24, 24, 24));
+    border-radius: 10px;
+}
+
+button {
+    border: aliceblue 1px solid;
+    margin: 0.5rem; /* Adjusted to use a relative unit */
+    padding: 0.5rem; /* Adjusted to use a relative unit */
+    height: 40px; /* Adjusted to use viewport width units for height */
+    width: 110px; /* Adjusted to use viewport width units for width */
+    border-radius: 10px;
+    background-color: black;
+    transition-duration: 0.1s;
+    transition: ease-in-out 0.1;
+}
+
+button:hover {
+    transition-duration: 0.1s;
+    transition: ease-in-out 0.1;
+    background-color: transparent;
+    width: 41vw; /* Adjusted to use viewport width units for width */
+}
+
+a {
+    font-style: italic;
+    font-weight: 700;
+    text-decoration: none;
+    color: aliceblue;
+}
+
+footer {
+    padding: 1rem; /* Adjusted to use a relative unit */
+    color: aliceblue;
+    display: block;
+    text-align: center;
+    position: absolute;
+    bottom: 4%;
+}
+
+@media only screen and (max-width: 768px) {
+    header,
+    section {
+        padding: 3vw; /* Adjusted to use viewport width units for padding */
+    }
+
+    #iotd {
+        max-width: 90%;
+        max-height: 80vh;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #iotd {
+        max-width: 90%;
+    }
+}
